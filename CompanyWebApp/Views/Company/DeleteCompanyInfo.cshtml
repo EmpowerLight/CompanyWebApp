@@ -1,0 +1,64 @@
+﻿@model CompanyWebApp.Models.CompanyInfoModel
+
+@{
+    ViewBag.Title = "DeleteCompanyInfo";
+}
+
+<h2>DeleteCompanyInfo</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CompanyInfoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfInstallation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfInstallation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfRenew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfRenew)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attachment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attachment)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "CompaniesInfoIndex")
+        </div>
+    }
+</div>

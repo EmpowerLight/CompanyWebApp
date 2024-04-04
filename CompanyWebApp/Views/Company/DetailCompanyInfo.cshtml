@@ -1,0 +1,58 @@
+﻿@model CompanyWebApp.Models.CompanyInfoModel
+
+@{
+    ViewBag.Title = "DetailCompanyInfo";
+}
+
+<h2>DetailCompanyInfo</h2>
+
+<div>
+    <h4>CompanyInfoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfInstallation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfInstallation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfRenew)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfRenew)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Attachment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attachment)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "UpdateCompanyInfo", new {  cid = Model.Cid  }) 
+    @Html.ActionLink("Back to List", "CompaniesInfoIndex")
+</p>

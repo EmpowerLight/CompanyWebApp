@@ -1,0 +1,62 @@
+﻿@model IEnumerable<CompanyWebApp.Models.CompanyInfoModel>
+
+@{
+    ViewBag.Title = "CompaniesInfoIndex";
+}
+
+<h2>CompaniesInfoIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateCompanyInfo")
+</p>
+<p class="alert-danger">@TempData["InfoSucess"]</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfInstallation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfRenew)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DisplayMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Attachment)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfInstallation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfRenew)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DisplayMessage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Attachment)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "UpdateCompanyInfo", new {  cid=item.Cid }) |
+            @Html.ActionLink("Details", "DetailCompanyInfo", new {  cid=item.Cid }) |
+            @Html.ActionLink("Delete", "DeleteCompanyInfo", new {  cid=item.Cid })
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
