@@ -7,7 +7,7 @@
 <h2>UpdateCompanyInfo</h2>
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("UpdateCompanyInfo", "Company", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     

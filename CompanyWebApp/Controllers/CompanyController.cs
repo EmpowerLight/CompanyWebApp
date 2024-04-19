@@ -103,16 +103,18 @@ namespace CompanyWebApp.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateCompanyInfo(CompanyInfoModel company, HttpPostedFileBase attachmentFile)
         {
-           if (attachmentFile != null && attachmentFile.ContentLength > 0)
+            if (attachmentFile != null && attachmentFile.ContentLength > 0)
             {
                 string fileName = Path.GetFileName(attachmentFile.FileName);
-                company.Attachment = fileName;
-                
+                string filePath = Path.Combine(Server.MapPath("~/Attachments"), fileName); 
+
+                attachmentFile.SaveAs(filePath);
+                company.Attachment = filePath; 
             }
 
-           if (service.CreateCompanyInfo(company))
+            if (service.CreateCompanyInfo(company))
             {
-                TempData["InfoSucess"] = "Sucessfully Created";
+                TempData["InfoSucess"] = "Successfully Created";
                 return RedirectToAction("CompaniesInfoIndex");
             }
             return View(company);
@@ -128,8 +130,16 @@ namespace CompanyWebApp.Controllers
         //Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult UpdateCompanyInfo(CompanyInfoModel model)
+        public ActionResult UpdateCompanyInfo(CompanyInfoModel model, HttpPostedFileBase attachmentFile)
         {
+            if (attachmentFile != null && attachmentFile.ContentLength > 0)
+            {
+                string fileName = Path.GetFileName(attachmentFile.FileName);
+                string filePath = Path.Combine(Server.MapPath("~/Attachments"), fileName);
+
+                attachmentFile.SaveAs(filePath);
+                model.Attachment = filePath;
+            }
             if (service.UpdateCompanyInfo(model))
             {
                 TempData["InfoSucess"] = "Updated Sucessfully";
@@ -165,5 +175,34 @@ namespace CompanyWebApp.Controllers
             return View(data);
         }
 
+        //Get
+        public ActionResult DetailWholeCompany()
+        {
+            return View();
+        }
+
+        //Post
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DetailWholeCompany(DateTime dateTime)
+        {
+            List<WholeCompanyModel> model = service.WholeDetails(dateTime);
+            return View(model);
+        }
+
+        //Get 
+        public ActionResult DetailCompanyFromName()
+        {
+            return View();
+        }
+
+        //post
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DetailCompanyFromName(string name)
+        {
+            List<WholeCompanyModel> model = service.WholeDetailsFromName(name);
+            return View(model);
+        }
     } 
 }

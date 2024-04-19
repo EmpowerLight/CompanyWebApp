@@ -25,19 +25,19 @@ namespace CompanyWebApp.Service
                 adapter = new SqlDataAdapter(command);
                 dt = new DataTable();
                 adapter.Fill(dt);
-
-                foreach (DataRow d in dt.Rows)
+                foreach(DataRow reader in dt.Rows)
                 {
                     list.Add(new CompanyModel
                     {
-                        Id = Convert.ToInt32(d["Id"]),
-                        CompanyName = d["CompanyName"].ToString(),
-                        Email = d["Email"].ToString(),
-                        PhoneNumber = Convert.ToInt32(d["PhoneNumber"]),
-                        MobileNumber = Convert.ToInt32(d["MobileNumber"])
+                        Id = Convert.ToInt32(reader["Id"]),
+                        CompanyName = reader["CompanyName"].ToString(),
+                        Email = reader["Email"].ToString(),
+                        PhoneNumber = Convert.ToInt32(reader["PhoneNumber"]),
+                        MobileNumber = Convert.ToInt32(reader["MobileNumber"])
                     });
                 }
-            } catch(Exception e)
+            }
+            catch(Exception e)
             {
                 throw;
             }
@@ -156,7 +156,7 @@ namespace CompanyWebApp.Service
                 command.Parameters.AddWithValue("@dateOfRenew", data.DateOfRenew);
                 command.Parameters.AddWithValue("@displayMessage", data.DisplayMessage);
                 command.Parameters.AddWithValue("@remarks", data.Remarks);
-                command.Parameters.AddWithValue("@attachment", "File Name");
+                command.Parameters.AddWithValue("@attachment", data.Attachment);
                 command.Parameters.AddWithValue("@id", data.Id);
                 connection.Open();
                 result = command.ExecuteNonQuery();
@@ -182,7 +182,7 @@ namespace CompanyWebApp.Service
                 command.Parameters.AddWithValue("@dateOfRenew", data.DateOfRenew);
                 command.Parameters.AddWithValue("@displayMessage", data.DisplayMessage);
                 command.Parameters.AddWithValue("@remarks", data.Remarks);
-                command.Parameters.AddWithValue("@attachment", "File Name");
+                command.Parameters.AddWithValue("@attachment", data.Attachment);
                 command.Parameters.AddWithValue("@id", data.Id);
                 command.Parameters.AddWithValue("@cid", data.Cid);
                 connection.Open();
@@ -219,6 +219,121 @@ namespace CompanyWebApp.Service
                 connection.Close();
             }
             return result > 0 ? true : false;
+        }
+
+        public List<WholeCompanyModel> WholeDetails(DateTime date)
+        {
+            List<WholeCompanyModel> list = new List<WholeCompanyModel> ();      
+            
+            try
+            {
+                command = new SqlCommand("sp_detail_whole", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@date", date);
+                connection.Open();
+                command.ExecuteNonQuery();
+                adapter = new SqlDataAdapter(command);
+                dt = new DataTable();
+                adapter.Fill(dt);
+
+                foreach(DataRow d in dt.Rows)
+                {
+                    CompanyModel company = new CompanyModel
+                    {
+                        Id = Convert.ToInt32(d["Id"]),
+                        CompanyName = d["CompanyName"].ToString(),
+                        Email = d["Email"].ToString(),
+                        PhoneNumber = Convert.ToInt32(d["PhoneNumber"]),
+                        MobileNumber = Convert.ToInt32(d["MobileNumber"])
+                    };
+
+                    CompanyInfoModel companyInfoModel = new CompanyInfoModel
+                    {
+                        Cid = Convert.ToInt32(d["Cid"]),
+                        DateOfInstallation = Convert.ToDateTime(d["DateOfInstallation"]),
+                        DateOfRenew = Convert.ToDateTime(d["DateOfRenew"]),
+                        DisplayMessage = d["DisplayMessage"].ToString(),
+                        Remarks = d["Remarks"].ToString(),
+                        Attachment = d["Attachment"].ToString(),
+                        Id = Convert.ToInt32(d["Id"])
+                    };
+
+                    WholeCompanyModel wholeCompanyModel = new WholeCompanyModel
+                    {
+                        Company = company,
+                        CompanyInfo = companyInfoModel
+                    };
+
+                    list.Add(wholeCompanyModel);
+
+                }
+            }catch(Exception e)
+            {
+                throw;
+            }finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
+        
+        public List<WholeCompanyModel> WholeDetailsFromName(string name)
+        {
+            List<WholeCompanyModel> list = new List<WholeCompanyModel>();
+            try
+            {
+                command = new SqlCommand("sp_detail_name", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@name", name);
+                connection.Open();
+                command.ExecuteNonQuery();
+                adapter = new SqlDataAdapter(command);
+                dt = new DataTable();
+                adapter.Fill(dt);
+
+                foreach (DataRow d in dt.Rows)
+                {
+                    CompanyModel company = new CompanyModel
+                    {
+                        Id = Convert.ToInt32(d["Id"]),
+                        CompanyName = d["CompanyName"].ToString(),
+                        Email = d["Email"].ToString(),
+                        PhoneNumber = Convert.ToInt32(d["PhoneNumber"]),
+                        MobileNumber = Convert.ToInt32(d["MobileNumber"])
+                    };
+
+                    CompanyInfoModel companyInfoModel = new CompanyInfoModel
+                    {
+                        Cid = Convert.ToInt32(d["Cid"]),
+                        DateOfInstallation = Convert.ToDateTime(d["DateOfInstallation"]),
+                        DateOfRenew = Convert.ToDateTime(d["DateOfRenew"]),
+                        DisplayMessage = d["DisplayMessage"].ToString(),
+                        Remarks = d["Remarks"].ToString(),
+                        Attachment = d["Attachment"].ToString(),
+                        Id = Convert.ToInt32(d["Id"])
+                    };
+
+                    WholeCompanyModel wholeCompanyModel = new WholeCompanyModel
+                    {
+                        Company = company,
+                        CompanyInfo = companyInfoModel
+                    };
+
+                    list.Add(wholeCompanyModel);
+
+                }
+            }
+            catch(Exception e)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            
+            
+            return list;
         }
     }
 }
