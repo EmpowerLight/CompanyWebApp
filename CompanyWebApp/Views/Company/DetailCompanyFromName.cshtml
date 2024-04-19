@@ -1,0 +1,99 @@
+﻿@model List<CompanyWebApp.Models.WholeCompanyModel>
+
+@{
+    ViewBag.Title = "DetailCompanyFromName";
+}
+
+<h2>Search Compant From Name</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <label for="date">Enter Name</label>
+    <input type="text" id="name" name="name" class="form-control" />
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+<div>
+    <h4>Result</h4>
+    <hr />
+    @if (Model != null)
+    {
+        <table class="table">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Company Name
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Mobile Number
+                </th>
+                <th>
+                    Date of Installation
+                </th>
+                <th>
+                    Date of Renew
+                </th>
+                <th>
+                    Display Message
+                </th>
+                <th>
+                    Remarks
+                </th>
+                <th>
+                    Attachments
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.CompanyName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.PhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Company.MobileNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyInfo.DateOfInstallation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyInfo.DateOfRenew)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyInfo.DisplayMessage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyInfo.Remarks)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CompanyInfo.Attachment)
+                    </td>
+                </tr>
+            }
+
+        </table>
+    }
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

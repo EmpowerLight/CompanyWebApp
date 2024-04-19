@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CompanyWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\service\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\service\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\detailwholecompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\detailwholecompany.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\detailcompanyfromname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\detailcompanyfromname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\detailcompanyinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\detailcompanyinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T08:02:35.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetailCompanyFromName.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:53:16.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\Index.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\Index.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\Index.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:48:11.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetailCompanyInfo.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyInfo.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\DetailCompanyInfo.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyInfo.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\DetailCompanyInfo.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAADIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:47:57.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\Create.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\Create.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\Create.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\Create.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:37:42.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetailWholeCompany.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailWholeCompany.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\DetailWholeCompany.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailWholeCompany.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\DetailWholeCompany.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T07:37:29.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Service\\CompanyService.cs",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Service\\CompanyService.cs",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Service\\CompanyService.cs",
+              "RelativeToolTip": "CompanyWebApp\\Service\\CompanyService.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAArwCYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:35:28.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\CompanyController.cs",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "CompanyWebApp\\Controllers\\CompanyController.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAYwMkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:35:11.813Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
