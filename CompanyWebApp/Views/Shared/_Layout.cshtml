@@ -29,7 +29,6 @@
                             // Check if User.Identity.Name is not null and not empty
                             if (User.Identity.IsAuthenticated)
                             {
-                                <li>@Html.ActionLink("Company", "Index", "Company")</li>
                                 <li>@Html.ActionLink("Logout", "Logout", "Login")</li>
                             }
                             else
