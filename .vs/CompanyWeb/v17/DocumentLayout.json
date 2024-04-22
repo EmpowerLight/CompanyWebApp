@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "E:\\CompanyWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\service\\accessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\service\\accessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -43,32 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccessService.cs",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Service\\AccessService.cs",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Service\\AccessService.cs",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Service\\AccessService.cs",
+              "RelativeToolTip": "CompanyWebApp\\Service\\AccessService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAawD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:41:32.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CompanyController.cs",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
               "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\CompanyController.cs",
               "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
               "RelativeToolTip": "CompanyWebApp\\Controllers\\CompanyController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAAEUAAAAxAAAA",
+              "ViewState": "AQIAAAYBAAAAAAAAAAAowA0BAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T06:59:38.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\RegisterController.cs",
               "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\RegisterController.cs",
               "RelativeToolTip": "CompanyWebApp\\Controllers\\RegisterController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB0AAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T06:25:23.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Web.config",
               "RelativeDocumentMoniker": "CompanyWebApp\\Web.config",
@@ -81,20 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAABYAAAA2AAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEUAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-22T06:03:16.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Login\\Index.cshtml",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\LoginController.cs",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "HashService.cs",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Service\\HashService.cs",
               "RelativeDocumentMoniker": "CompanyWebApp\\Service\\HashService.cs",

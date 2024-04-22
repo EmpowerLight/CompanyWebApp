@@ -7,20 +7,45 @@
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+        /* Custom CSS for navbar */
+        body {
+            padding-top:0;
+        }
+        .navbar {
+            color: white; /* Set text color to white */
+            font-weight: bolder; /* Make text bold */
+            font-size: large;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; /* Override default color for navbar links */
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bolder; /* Make text bold */
+            font-size: larger;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <div class="navbar navbar-fixed-top navbar-light bg-success">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top bg-info">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 @Html.ActionLink("Company Web", "Index", "Company", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav pull-right">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
 
 
                     @{
@@ -29,24 +54,44 @@
                             // Check if User.Identity.Name is not null and not empty
                             if (User.Identity.IsAuthenticated)
                             {
-                                <li>@Html.ActionLink("Logout", "Logout", "Login")</li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Entry
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">@Html.ActionLink("Add Company", "Create", "Company")</li>
+                                        <li class="dropdown-item">@Html.ActionLink("Add Additional Company Information", "CreateCompanyInfo", "Company")</li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Report
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">@Html.ActionLink("Search Company From Date", "DetailWholeCompany", "Company")</li>
+                                        <li class="dropdown-item">@Html.ActionLink("Search Company From Name", "DetailCompanyFromName", "Company")</li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">@Html.ActionLink("Logout", "Logout", "Login", null, new { @class = "nav-link" })</li>
                             }
                             else
                             {
-                                <li> @Html.ActionLink("Login", "Index", "Login") </li>
-                                <li> @Html.ActionLink("Register", "Index", "Register") </li>
+                                <li class="nav-item"> @Html.ActionLink("Login", "Index", "Login", null, new { @class = "nav-link" }) </li>
+                                <li class="nav-item"> @Html.ActionLink("Register", "Index", "Register", null, new { @class = "nav-link" }) </li>
                             }
                         }
                         catch (NullReferenceException)
                         {
-                            <li> @Html.ActionLink("Login", "Index", "Login") </li>
-                            <li> @Html.ActionLink("Register", "Index", "Register") </li>
+                            <li class="nav-item"> @Html.ActionLink("Login", "Index", "Login", null, new { @class = "nav-link" }) </li>
+                            <li class="nav-item"> @Html.ActionLink("Register", "Index", "Register", null, new { @class = "nav-link" }) </li>
                         }
                     }
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
     </div>

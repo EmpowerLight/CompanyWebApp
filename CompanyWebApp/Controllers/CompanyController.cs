@@ -135,10 +135,27 @@ namespace CompanyWebApp.Controllers
             if (attachmentFile != null && attachmentFile.ContentLength > 0)
             {
                 string fileName = Path.GetFileName(attachmentFile.FileName);
-                string filePath = Path.Combine(Server.MapPath("~/Attachments"), fileName); 
 
-                attachmentFile.SaveAs(filePath);
-                company.Attachment = filePath; 
+                string directoryPath = Server.MapPath("~/Attachments");
+                string filePath = Path.Combine(directoryPath, fileName);
+
+                // Ensure directory exists or create it
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                try
+                {
+                    attachmentFile.SaveAs(filePath);
+                    company.Attachment = filePath;
+                }
+                catch (Exception ex)
+                {
+                    // Handle exception, log error, display message to user, etc.
+                    TempData["ErrorMessage"] = "Failed to save attachment: " + ex.Message;
+                    return View(company); // Redirect to an error handling action
+                }
             }
 
             if (service.CreateCompanyInfo(company))

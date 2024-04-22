@@ -64,7 +64,6 @@ namespace CompanyWebApp.Service
             {
                 connection.Close();
             }
-           // return model.Password.Equals(userPassword);
             return model.Email == userEmail && HashService.VerifyPassword(model.Password, userPassword) ? true : false;
         }
     }
