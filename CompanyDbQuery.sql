@@ -24,6 +24,36 @@ create table Companies_Infos(
 	Id int FOREIGN KEY REFERENCES Companies(Id)
 );
 
+create table [User](
+	UserId int primary key identity(1, 1),
+	Email varchar(50) unique,
+	[Password] nvarchar(225), 
+	ContactNumber int
+);
+
+create procedure sp_insert_user
+@email varchar(50),
+@password varchar(500),
+@contactNumber int
+as
+begin
+	insert into [User] (Email, [Password], ContactNumber) 
+	values (@email, @password, @contactNumber);
+end;
+
+create procedure sp_select_user
+@email varchar(50)
+as
+begin
+	select * from [User] where Email = @email;
+end;
+
+select * from [User];
+
+delete [User] where Email = 'global@global.com'
+
+exec sp_select_user 'global@global.com';
+
 select * from Companies_Infos;
 
 create proc sp_select

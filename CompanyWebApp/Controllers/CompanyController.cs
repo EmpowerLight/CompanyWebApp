@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace CompanyWebApp.Controllers
 {
@@ -15,6 +16,10 @@ namespace CompanyWebApp.Controllers
         // GET: Company
         public ActionResult Index()
         {
+            if(!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompany();
             return View(data);
         }
@@ -22,6 +27,10 @@ namespace CompanyWebApp.Controllers
         // Get
         public ActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
@@ -42,6 +51,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult Update(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompany().Find(c => c.Id == id);
             return View(data);
         }
@@ -62,6 +75,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompany().Find(c => c.Id == id);
             return View(data);
         }
@@ -82,6 +99,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompany().Find(c => c.Id == id);
             return View(data);
         }
@@ -89,6 +110,10 @@ namespace CompanyWebApp.Controllers
         // Get
         public ActionResult CompaniesInfoIndex()
         {
+            if(!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompanyInfo();
             return View(data);
         }
@@ -96,6 +121,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult CreateCompanyInfo()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
         //Post
@@ -123,6 +152,10 @@ namespace CompanyWebApp.Controllers
         // Get
         public ActionResult UpdateCompanyInfo(int? cid)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompanyInfo().Find(c => c.Cid == cid);
             return View(data);
         }
@@ -151,6 +184,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult DeleteCompanyInfo(int? cid)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var data = service.ListCompanyInfo().Find(c => c.Cid == cid);
             return View(data);
         }
@@ -178,6 +215,10 @@ namespace CompanyWebApp.Controllers
         //Get
         public ActionResult DetailWholeCompany()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
@@ -193,6 +234,10 @@ namespace CompanyWebApp.Controllers
         //Get 
         public ActionResult DetailCompanyFromName()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
