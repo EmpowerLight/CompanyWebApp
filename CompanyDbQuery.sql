@@ -2,9 +2,10 @@ create database CompanyDb;
 
 use CompanyDb;
 
+drop database CompanyDb
 
 create table Companies(
-	Id int identity(1, 1),
+	Id int identity(1, 1) primary key,
 	CompanyName varchar(500),
 	Email varchar(500),
 	PhoneNumber int,
@@ -22,6 +23,18 @@ create table Companies_Infos(
 	Remarks Varchar(500),
 	Attachment nvarchar(500),
 	Id int FOREIGN KEY REFERENCES Companies(Id)
+);
+
+alter table Companies_Infos
+Add constraint pk_Cid primary key(Cid)
+
+
+create table Payment(
+	PaymentId int primary key identity(1, 1),
+	PaymentType varchar(30),
+	PaymentDate datetime, 
+	Cid int,
+	foreign key(Cid) references Companies_Infos(Cid)
 );
 
 create table [User](
@@ -192,7 +205,7 @@ end
 
 
 
-
+select * from Payment
 
 
 

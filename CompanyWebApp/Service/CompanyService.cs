@@ -1,10 +1,13 @@
 ﻿using CompanyWebApp.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace CompanyWebApp.Service
@@ -334,6 +337,53 @@ namespace CompanyWebApp.Service
             
             
             return list;
+        }
+
+        public Boolean makePayment(PaymentModel model)
+        {
+            int result = 0, result1 = 0;
+            SqlTransaction transaction = null;
+
+            try
+            {
+                connection.Open();
+                transaction = connection.BeginTransaction();
+
+                string query = "INSERT INTO Payment (PaymentType, PaymentDate, Cid) VALUES (@PaymentType, @PaymentDate, @Cid)";
+                using (SqlCommand command = new SqlCommand(query, connection, transaction))
+                {
+                    command.Parameters.AddWithValue("@PaymentType", model.PaymentType);
+                    command.Parameters.AddWithValue("@PaymentDate", model.PaymentDate);
+                    command.Parameters.AddWithValue("@Cid", model.Cid);
+                    result = command.ExecuteNonQuery();
+                }
+
+                query = "UPDATE Companies_Infos SET DateOfInstallation = @dateOfInstallation, DateOfRenew = @dateOfRenew WHERE Cid = @cid";
+                using (SqlCommand command = new SqlCommand(query, connection, transaction))
+                {
+                    command.Parameters.AddWithValue("@dateOfInstallation", model.PaymentDate.AddYears(1));
+                    command.Parameters.AddWithValue("@dateOfRenew", model.PaymentDate);
+                    command.Parameters.AddWithValue("@cid", model.Cid);
+                    result1 = command.ExecuteNonQuery();
+                }
+
+                // Commit the transaction if both commands succeed
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction?.Rollback();
+                Console.WriteLine("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                // Close the connection
+                if (connection.State != ConnectionState.Closed)
+                    connection.Close();
+            }
+
+            // Return true if both commands succeed, otherwise false
+            return (result > 0 && result1 > 0);
         }
     }
 }

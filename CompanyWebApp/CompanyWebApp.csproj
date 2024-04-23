@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -129,6 +130,7 @@
     <Compile Include="Models\CompanyInfoModel.cs" />
     <Compile Include="Models\CompanyModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PaymentModel.cs" />
     <Compile Include="Models\RegisterModel.cs" />
     <Compile Include="Models\WholeCompanyModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -183,6 +185,7 @@
     <Content Include="Views\Company\DetailCompanyFromName.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
