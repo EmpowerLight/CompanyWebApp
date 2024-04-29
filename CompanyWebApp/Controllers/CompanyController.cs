@@ -266,5 +266,16 @@ namespace CompanyWebApp.Controllers
             List<WholeCompanyModel> model = service.WholeDetailsFromName(name);
             return View(model);
         }
+
+        //Get
+        public ActionResult CompanyExpiry()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("index", "Login");
+            }
+            List<WholeCompanyModel> model = service.getAboutExpireCompany();
+            return View(model);
+        }
     } 
 }

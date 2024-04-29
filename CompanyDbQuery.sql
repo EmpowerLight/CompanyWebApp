@@ -207,6 +207,13 @@ end
 
 select * from Payment
 
+create procedure sp_whole_companies
+as 
+begin
+	select * from Companies c
+	full join Companies_Infos ci
+	on ci.Id = c.Id 
+end
 
 
 

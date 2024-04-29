@@ -7,40 +7,16 @@
       "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\service\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\models\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\models\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\detailcompanyfromname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\detailcompanyfromname.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\models\\companymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|E:\\CompanyWeb\\companywebapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|e:\\companyweb\\companywebapp\\views\\company\\companyexpiry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DDBB8AF-A750-4548-A83C-7ED78CEAEBFC}|CompanyWebApp\\CompanyWebApp.csproj|solutionrelative:companywebapp\\views\\company\\companyexpiry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,32 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\LoginController.cs",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "CompanyWebApp\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T11:42:46.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Payment\\Index.cshtml",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Payment\\Index.cshtml",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Payment\\Index.cshtml",
-              "RelativeToolTip": "CompanyWebApp\\Views\\Payment\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "DetailCompanyFromName.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\DetailCompanyFromName.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T11:32:31.2Z",
+              "WhenOpened": "2024-04-29T09:47:44.742Z",
               "EditorCaption": ""
             },
             {
@@ -86,99 +49,35 @@
               "RelativeDocumentMoniker": "CompanyWebApp\\Service\\CompanyService.cs",
               "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Service\\CompanyService.cs",
               "RelativeToolTip": "CompanyWebApp\\Service\\CompanyService.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAwwFIBAAAYAAAA",
+              "ViewState": "AQIAAIsBAAAAAAAAAAAAwLABAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:52:03.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CompanyWebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-23T09:31:27.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\PaymentController.cs",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "CompanyWebApp\\Controllers\\PaymentController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T09:25:05.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CompanyModel.cs",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Models\\CompanyModel.cs",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Models\\CompanyModel.cs",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Models\\CompanyModel.cs",
-              "RelativeToolTip": "CompanyWebApp\\Models\\CompanyModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:27:15.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PaymentModel.cs",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Models\\PaymentModel.cs",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Models\\PaymentModel.cs",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Models\\PaymentModel.cs",
-              "RelativeToolTip": "CompanyWebApp\\Models\\PaymentModel.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBEAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:16:32.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CompanyController.cs",
               "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
               "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\CompanyController.cs",
               "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\CompanyController.cs",
               "RelativeToolTip": "CompanyWebApp\\Controllers\\CompanyController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAMAAAA",
+              "ViewState": "AQIAAAkBAAAAAAAAAAAlwBQBAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T06:59:38.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Controllers\\RegisterController.cs",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "CompanyWebApp\\Controllers\\RegisterController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T06:25:23.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Web.config",
-              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Web.config",
-              "RelativeDocumentMoniker": "CompanyWebApp\\Web.config",
-              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Web.config",
-              "RelativeToolTip": "CompanyWebApp\\Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-22T06:22:16.424Z",
+              "DocumentIndex": 3,
+              "Title": "CompanyExpiry.cshtml",
+              "DocumentMoniker": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\CompanyExpiry.cshtml",
+              "RelativeDocumentMoniker": "CompanyWebApp\\Views\\Company\\CompanyExpiry.cshtml",
+              "ToolTip": "E:\\CompanyWeb\\CompanyWebApp\\Views\\Company\\CompanyExpiry.cshtml",
+              "RelativeToolTip": "CompanyWebApp\\Views\\Company\\CompanyExpiry.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T08:57:20.558Z",
               "EditorCaption": ""
             }
           ]

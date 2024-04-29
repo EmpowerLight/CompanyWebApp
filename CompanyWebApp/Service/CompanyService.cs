@@ -385,5 +385,63 @@ namespace CompanyWebApp.Service
             // Return true if both commands succeed, otherwise false
             return (result > 0 && result1 > 0);
         }
+
+        public List<WholeCompanyModel> getAboutExpireCompany()
+        {
+            List<WholeCompanyModel> list = new List<WholeCompanyModel>();
+            try
+            {
+                command = new SqlCommand("sp_whole_companies", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                adapter = new SqlDataAdapter(command);
+                dt = new DataTable();
+                adapter.Fill(dt);
+
+                foreach(DataRow d in dt.Rows)
+                {
+                    if (d["DateOfInstallation"] != DBNull.Value && d["DateOfRenew"] != DBNull.Value)
+                    {
+                        DateTime dateOfinst = Convert.ToDateTime(d["DateOfInstallation"]);
+
+                        DateTime oneMonthafter = DateTime.Now.AddMonths(1);
+
+                        if (oneMonthafter == dateOfinst || oneMonthafter >= dateOfinst)
+                        {
+                            list.Add(new WholeCompanyModel
+                            {
+                                Company = new CompanyModel
+                                {
+
+                                    Id = Convert.ToInt32(d["Id"]),
+                                    CompanyName = d["CompanyName"].ToString(),
+                                    Email = d["Email"].ToString(),
+                                    PhoneNumber = Convert.ToInt32(d["PhoneNumber"]),
+                                    MobileNumber = Convert.ToInt32(d["MobileNumber"])
+                                },
+                                CompanyInfo = new CompanyInfoModel
+                                {
+                                    Cid = Convert.ToInt32(d["Cid"]),
+                                    DateOfInstallation = Convert.ToDateTime(d["DateOfInstallation"]),
+                                    DateOfRenew = Convert.ToDateTime(d["DateOfRenew"]),
+                                    DisplayMessage = d["DisplayMessage"].ToString(),
+                                    Remarks = d["Remarks"].ToString(),
+                                    Attachment = d["Attachment"].ToString(),
+                                    Id = Convert.ToInt32(d["Id"])
+                                }
+
+                            });
+                        }
+                    }
+                    
+                    
+                }
+            }catch(Exception) {
+                throw;
+            }finally
+            {
+                connection.Close();
+            }
+            return list;
+        }
     }
 }
